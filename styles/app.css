@@ -1,125 +1,113 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Space+Mono:wght@400;700&display=swap');
-img {
-    width: 100%;
-    image-rendering: crisp-edges;
-    height: auto;
-}
+
 /* Todo: Header Section */
-.header__content {
+header {
     height: 105px;
 }
-.header__nav--corner {
+.text-header {
     color: #333333;
     font-family: 'Inconsolata', monospace;
     font-style: normal;
     font-weight: bold;
-    font-size: 34px;
+    font-size: 24px;
     line-height: 25px;
     letter-spacing: -0.08em;
     text-transform: uppercase;
     margin: 0;
-    padding: 40px 150px;
+    padding: 20px 100px;
 }
+img {
+    width: 100%;
+}
+
 /* Todo: hero Section */
 .hero {
     display: flex;
-    flex-wrap: wrap;
-    margin: 10px auto;
-    justify-content: center;
 }
-.hero__img {
-    height: 500px;
-    width: 600px;
-    padding-left: 150px;
+.hero-img {
+    max-width: 500px;
+    margin-left: 100px;
 }
-.hero__inf {
-    padding-left: 150px;
+.hero-inf {
+   margin-left: 120px;
+   margin-right: 2vw;
 }
-.hero__inf--title {
+.hero-title {
     color: #333333;
     font-family: 'Space Mono', monospace;
     font-style: normal;
-    font-size: 65px;
+    font-size: 45px;
     font-weight: bold;
     line-height: 64px;
     letter-spacing: -0.035em;
-    width: 660px;
+    width: 400px;
     margin: 0;
 }
-.hero__inf--paragraph{
+.hero-paragraph{
     color: #4F4F4F;
     font-family: 'Space Mono', monospace;
     font-style: normal;
-    font-size: 33px;
+    font-size: 24px;
     line-height: 36px;
     letter-spacing: -0.035em;
-    width: 530px; 
-    margin-top: 60px;
+    width: 370px; 
+    margin-top: 40px;
 }
-.button {
+.hero-button {
     background-color: #333333;
+    border-radius: 10px;
     color: white;
     display: inline-block;
-    font-size: 20px;
+    font-size: 13px;
     font-family: 'Space Mono', monospace;
     line-height: 21px;
     letter-spacing: -0.035px;
     text-decoration: none;
     text-transform: uppercase;
     margin-top: 20px;
-    padding: 20px 30px;
+    padding: 15px 30px;
     transition: all 0.5s ease-in;
 }
-.button:hover {
+.hero-button:hover {
     background-color: #616161;
 }
 .footer {
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Space Mono', monospace;
     font-weight: 700;
     line-height: 21px;
     text-decoration: none;
     text-transform: uppercase;
-    padding-top: 70px;
+    padding-top: 50px;
 }
-
-@media ( max-width: 840px ) {
-    .header__nav--corner {
-        padding: 10px 30px;
-        font-size: 30px;
+@media( max-width: 900px ) {
+    .hero {
+        flex-direction: column;
+        align-items: center;
     }
-    .hero__img {
-        height: 340px;
-        width: 380px;
-        padding: 0;
-        margin: 0 auto;
-    }
-    .hero__inf {
-        padding: 0;
-    }
-    .hero__inf--title {
-        font-size: 50px;
-        width: 400px;
-    }
-    .hero__inf--paragraph {
-        font-size: 20px;
-        width: 300px;
-    }
+    .hero-img,.hero-inf {
+        margin: 0;
+     }
 }
-@media ( max-width: 440px ) {
-    .hero__img {
-        height: 240px;
+@media( max-width: 460px ) {
+    .hero {
+        padding: 20px;
+    }
+    .hero-title {
+        line-height: 45px;
+        padding-left: 20px;
+        font-size: 35px;
         width: 280px;
     }
-    .hero__inf--title {
-        font-size: 35px;
-        width: 300px;
+    .hero-paragraph {
+        line-height: 35px;
+        padding-left: 20px;
+        font-size: 20px;
+        width: 280px;
     }
-    .button {
-        font-size: 14px;
-    }
-    .footer {
-        font-size: 13px;
+    .hero-button {
+        font-size: 12px;
+        margin: 0 20px;
     }
 }
