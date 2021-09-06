@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Space+Mono:wght@400;700&display=swap');
-
 img {
     width: 100%;
     image-rendering: crisp-edges;
     height: auto;
 }
-
 /* Todo: Header Section */
 .header__content {
     height: 105px;
