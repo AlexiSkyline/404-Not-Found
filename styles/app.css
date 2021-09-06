@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Space+Mono:wght@400;700&display=swap');
+
+img {
+    width: 100%;
+    image-rendering: crisp-edges;
+    height: auto;
+}
+
+/* Todo: Header Section */
+.header__content {
+    height: 105px;
+}
+.header__nav--corner {
+    color: #333333;
+    font-family: 'Inconsolata', monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 25px;
+    letter-spacing: -0.08em;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 40px 150px;
+}
+/* Todo: hero Section */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    justify-content: center;
+}
+.hero__img {
+    height: 500px;
+    width: 600px;
+    padding-left: 150px;
+}
+.hero__inf {
+    padding-left: 150px;
+}
+.hero__inf--title {
+    color: #333333;
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-size: 65px;
+    font-weight: bold;
+    line-height: 64px;
+    letter-spacing: -0.035em;
+    width: 660px;
+    margin: 0;
+}
+.hero__inf--paragraph{
+    color: #4F4F4F;
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-size: 33px;
+    line-height: 36px;
+    letter-spacing: -0.035em;
+    width: 530px; 
+    margin-top: 60px;
+}
+.button {
+    background-color: #333333;
+    color: white;
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Space Mono', monospace;
+    line-height: 21px;
+    letter-spacing: -0.035px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 20px;
+    padding: 20px 30px;
+    transition: all 0.5s ease-in;
+}
+.button:hover {
+    background-color: #616161;
+}
+.footer {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    line-height: 21px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-top: 70px;
+}
+
+@media ( max-width: 840px ) {
+    .header__nav--corner {
+        padding: 10px 30px;
+        font-size: 30px;
+    }
+    .hero__img {
+        height: 340px;
+        width: 380px;
+        padding: 0;
+        margin: 0 auto;
+    }
+    .hero__inf {
+        padding: 0;
+    }
+    .hero__inf--title {
+        font-size: 50px;
+        width: 400px;
+    }
+    .hero__inf--paragraph {
+        font-size: 20px;
+        width: 300px;
+    }
+}
+@media ( max-width: 440px ) {
+    .hero__img {
+        height: 240px;
+        width: 280px;
+    }
+    .hero__inf--title {
+        font-size: 35px;
+        width: 300px;
+    }
+    .button {
+        font-size: 14px;
+    }
+    .footer {
+        font-size: 13px;
+    }
+}
